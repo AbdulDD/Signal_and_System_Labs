@@ -1,0 +1,14 @@
+t=0:0.01:8;
+n=0:1:20;
+x=2*(0.85).^n;
+a=5*exp(-6*t);
+b=5*exp(-3*t);
+d=2*exp(t)
+subplot(2,2,1);
+plot(t,a);
+subplot(2,2,2);
+plot(t,b);
+subplot(2,2,3);
+plot(t,d);
+subplot(2,2,4);
+stem(n,x);

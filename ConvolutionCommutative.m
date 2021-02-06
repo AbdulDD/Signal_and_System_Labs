@@ -1,0 +1,14 @@
+h=[1 1 1];
+x=[0.5 2];
+subplot(2,1,1);
+C1=conv(h,x);
+stem(C1);
+xlabel('frequency');
+ylabel('magnitude');
+title('conv(h,x)');
+subplot(2,1,2);
+C2=conv(x,h);
+stem(C2);
+xlabel('frequency');
+ylabel('magnitude');
+title('conv(x,h)');
